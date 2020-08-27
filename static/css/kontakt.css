@@ -1,0 +1,33 @@
+.main_content {
+    padding: 3%;
+}
+
+a {
+    color: #3C3DFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#kontakt_information,
+#map {
+    width: 50%;
+    display: inline-block;
+}
+
+#kontakt_information {
+    float: right;
+}
+
+@media (max-width:1400px) {
+    #kontakt_information,
+    #map {
+        width: 100%;
+        display: block;
+    }
+    #map {
+        text-align: center;
+    }
+    #kontakt_information {
+        float: unset;
+    }
+}

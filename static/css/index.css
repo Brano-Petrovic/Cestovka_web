@@ -1,0 +1,50 @@
+.main_content .item:first-child {
+    margin-top: 0;
+}
+
+.main_content .item {
+    border-radius: 8px;
+    /* height: 200px; */
+    margin: 1%;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    transition: 0.2s;
+}
+
+.main_content .item:hover {
+    top: 5px;
+    filter: brightness(90%);
+}
+
+.main_content .item .hotel_photo {
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item_popis {
+    display: inline-block;
+    width: calc(100% - 200px);
+}
+
+.lietadlo_icon {
+    width: 50px;
+    height: auto;
+}
+
+@media (max-width:767px) {
+    .item_popis {
+        width: unset;
+        display: block;
+    }
+    .main_content {
+        margin-left: 0;
+    }
+    .main_content .item .hotel_photo {
+        height: auto;
+        width: 100%;
+    }
+}

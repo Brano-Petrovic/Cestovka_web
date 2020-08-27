@@ -6,12 +6,12 @@ ul {
     text-align: center;
 }
 
-a,
-a:hover,
-a.active,
-a:active,
-a:visited,
-a:focus {
+.exo-menu a,
+.exo-menu a:hover,
+.exo-menu a.active,
+.exo-menu a:active,
+.exo-menu a:visited,
+.exo-menu a:focus {
     color: #fefefe;
     text-decoration: none;
 }
