@@ -310,7 +310,7 @@ li.flyout-mega>a:hover+.flyout-mega-wrap {
 @media (min-width:767px) {
     .exo-menu>li>a {
         display: block;
-        padding: 20px 22px;
+        padding: 18px 15px;
     }
     .mega-menu,
     .flyout-mega-wrap,
@@ -347,7 +347,7 @@ li.flyout-mega>a:hover+.flyout-mega-wrap {
     }
     .display.exo-menu>li>a {
         display: block;
-        padding: 20px 22px;
+        padding: 18px 15px;
     }
     .mega-menu,
     .Images,

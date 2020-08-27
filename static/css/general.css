@@ -102,6 +102,10 @@
     color: white;
 }
 
+.fa {
+    transform: unset;
+}
+
 @media (min-width:767px) {
     #reklama_div {
         display: inline-block;
@@ -132,6 +136,14 @@
     }
 }
 
-.fa {
-    transform: unset;
+@media (max-width:1605px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media (max-width:1400px) {
+    .content {
+        width: 85%;
+    }
 }
