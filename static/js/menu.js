@@ -19,4 +19,8 @@ $(function() {
         }
     });
 
+    // $('.box').attr('class', 'border_shadow')
+    // ifrProfiTour.$('.box').addClassName('border_shadow')
+    $("#ifrProfiTour").contents().find("div").addClass("border_shadow")
+
 });

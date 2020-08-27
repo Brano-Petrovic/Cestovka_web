@@ -76,18 +76,18 @@ body {
     margin-bottom: 10px;
 }
 
-#ponuka {
+.main_content {
     display: inline-block;
-    width: 84%;
+    width: 80%;
     vertical-align: top;
+    margin-left: 4%;
 }
 
-#ponuka .item:first-child {
+.main_content .item:first-child {
     margin-top: 0;
 }
 
-#ponuka .item {
-    background-color: white;
+.main_content .item {
     border-radius: 8px;
     /* height: 200px; */
     margin: 1%;
@@ -97,12 +97,12 @@ body {
     transition: 0.2s;
 }
 
-#ponuka .item:hover {
+.main_content .item:hover {
     top: 5px;
     filter: brightness(90%);
 }
 
-#ponuka .item .hotel_photo {
+.main_content .item .hotel_photo {
     object-fit: cover;
     height: 180px;
     width: 180px;
@@ -121,6 +121,7 @@ body {
 }
 
 .shadow_border {
+    background-color: white;
     border-radius: 8px;
     border-style: solid;
     border-color: black;
@@ -152,14 +153,14 @@ body {
 }
 
 @media (max-width:767px) {
-    #ponuka {
+    .main_content {
         width: 100%;
     }
     .item_popis {
         width: unset;
         display: block;
     }
-    #ponuka .item .hotel_photo {
+    .main_content .item .hotel_photo {
         height: auto;
         width: 100%;
     }
