@@ -4,7 +4,7 @@ $(function() {
         if (window.innerWidth > 767) {
             $('.exo-menu').css('height', 'unset')
         } else {
-            $('.exo-menu').css('height', '64px')
+            $('.exo-menu').css('height', '60px')
         }
     });
 
@@ -15,7 +15,7 @@ $(function() {
         if ($('.exo-menu').attr('class') == "exo-menu display" && window.innerWidth < 767) {
             $('.exo-menu').css('height', 'unset')
         } else {
-            $('.exo-menu').css('height', '64px')
+            $('.exo-menu').css('height', '60px')
         }
     });
 });
