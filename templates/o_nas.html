@@ -18,7 +18,14 @@
 
     <link rel="stylesheet" href="../static/css/menu.css">
     <link rel="stylesheet" href="../static/css/general.css">
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/o_nas.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="../static/js/menu.js"></script>
 </head>
 
 <body>
@@ -30,7 +37,7 @@
             <img id="logo" src="../static/img/logo.png" alt="Logo">
         </div>
         <ul class="exo-menu">
-            <li><a class="active" href="index_with_iframe.html"><i class="fa fa-home"></i> Úvod</a></li>
+            <li><a href="index_with_iframe.html"><i class="fa fa-home"></i> Úvod</a></li>
             <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-suitcase"></i>Letentky, hotely, autá</a>
                 <!--Drop Down-->
                 <ul class="drop-down-ul animated fadeIn">
@@ -62,10 +69,10 @@
                 </ul>
                 <!--//End drop down-->
             </li>
-            <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-info-circle"></i> O nás</a>
+            <li class="drop-down"><a class="active" href="#"><i class="fa fa-angle-down"></i><i class="fa fa-info-circle"></i> O nás</a>
                 <!--Drop Down-->
                 <ul class="drop-down-ul animated fadeIn">
-                    <li><a href="o_nas.html">Popis</a></li>
+                    <li><a class="active" href="o_nas.html">Popis</a></li>
                     <li><a href="#">Zľavy</a></li>
                     <li class="flyout-right"><a href="#"><i class="fa fa-angle-down"></i>Darčekové poukážky</a>
                         <!--Flyout Right-->
@@ -102,74 +109,18 @@
             <img src="../static/img/12.reklama.PNG" alt="reklama">
         </div>
 
-        <div class="main_content">
-            <div class="item shadow_border align-top">
-                <img class="hotel_photo" src="../static/img/hotel1.jpeg" alt="hotel1">
-                <div class="item_popis">
-                    <h3>Hotel 1</h3>
-                    <h6>Krajina - mesto</h6>
-                    <p>
-                        Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis
-                        Popis PopisPopis Popis Popis
-                    </p>
-                    <p class="fa fa-plane"> Odlet: Bratislava</p>
-                </div>
-            </div>
-            <div class="item shadow_border">
-                <img class="hotel_photo" src="../static/img/hotel2.jpg" alt="hotel2">
-                <div class="item_popis">
-                    <h3>Hotel 2</h3>
-                    <h6>Krajina - mesto</h6>
-                    <p>
-                        Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis
-                    </p>
-                    <p><img class="lietadlo_icon" src="../static/img/lietadlo_icon.png" alt="letecka_doprava"> Odlet: Bratislava</p>
-                </div>
-            </div>
-            <div class="item shadow_border">
-                <img class="hotel_photo" src="../static/img/hotel3.jpg" alt="hotel3">
-                <div class="item_popis">
-                    <h3>Hotel 3</h3>
-                    <h6>Krajina - mesto</h6>
-                    <p>
-                        Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis
-                    </p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="item shadow_border">
-                <img class="hotel_photo" src="../static/img/hotel4.jpg" alt="hotel4">
-                <div class="item_popis">
-                    <h3>Hotel 4</h3>
-                    <h6>Krajina - mesto</h6>
-                    <p>
-                        Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis
-                    </p>
-                    <p></p>
-                </div>
-            </div>
-            <div class="item shadow_border">
-                <img class="hotel_photo" src="../static/img/hotel5.jpg" alt="hotel5">
-                <div class="item_popis">
-                    <h3>Hotel 5</h3>
-                    <h6>Krajina - mesto</h6>
-                    <p>
-                        Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis
-                    </p>
-                    <p><img class="lietadlo_icon" src="../static/img/lietadlo_icon.png" alt="letecka_doprava"> Odlet: Bratislava</p>
-                </div>
-            </div>
-            <div class="item shadow_border">
-                <img class="hotel_photo" src="../static/img/hotel6.jpg" alt="hotel6">
-                <div class="item_popis">
-                    <h3>Hotel 6</h3>
-                    <h6>Krajina - mesto</h6>
-                    <p>
-                        Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis Popis Popis Popis Popis Popis Popis Popis Popis PopisPopis Popis Popis
-                    </p>
-                    <p><img class="lietadlo_icon" src="../static/img/lietadlo_icon.png" alt="letecka_doprava"> Odlet: Bratislava</p>
-                </div>
-            </div>
+        <div class="shadow_border main_content text-center">
+            <h2>O nás</h2>
+            <img class="d-inline-block" src="../static/img/budova.png" alt="budova_CK">
+            <p class="text-left pt-4">
+                Dovolenka – symbol pohody, uvoľnenia, dobrej nálady a pozitívnej energie. Ponúkame Vám široký výber pobytových, poznávacích a ozdravovacích zájazdov doma i v zahraničí. Už 17. sezónu máte k dispozícií nielen mnohokrát realizované zájazdy, ale aj celý
+                rad noviniek, s ktorými ste sa doteraz v našej ponuke ešte nestretli a ktoré sme pre Vás v priebehu roka starostlivo pripravili. Veríme, že na ne nečakajú len naši mnohoročný, verný klienti, ale aj Vy, čo sa oboznamujete s našou ponukou
+                prvý krát a my Vaše očakávania nechceme sklamať. Záleží len na Vás, či si zvolíte oddych na plážach, v obľúbenej oblasti , alebo cestovanie za novými objavmi a poznatkami. Dúfame, že dovolenka s nami Vás presvedčí o kvalite a bude pre
+                Vás skutočným oddychom s množstvom zážitkov.
+            </p>
+            <p class="prianie">
+                Prajeme Vám šťastnú cestu a ničím nerušený pobyt.
+            </p>
         </div>
 
         <div id="reklama_div_mobile" class="shadow_border">
@@ -201,12 +152,7 @@
         </div>
     </div>
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <script src="../static/js/menu.js"></script>
 </body>
 
 </html>

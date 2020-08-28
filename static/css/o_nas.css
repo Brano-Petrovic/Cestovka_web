@@ -1,0 +1,15 @@
+.main_content {
+    padding: 3%;
+}
+
+.prianie {
+    font-family: "lucida calligraphy", cursive;
+    font-weight: bold;
+    font-size: 27px;
+    color: rgb(15, 111, 255);
+    text-shadow: 1px 2px 5px rgb(53, 53, 53);
+}
+
+.main_content img {
+    box-shadow: 2px 3px 8px #000000;
+}
