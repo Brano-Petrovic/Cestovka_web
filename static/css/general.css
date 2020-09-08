@@ -1,5 +1,49 @@
 #logo {
-    margin-left: 25px;
+    margin: 5px 10px;
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+.partnerske_ck{
+    margin: 20px 0;
+}
+
+.partnerske_ck img{
+    height: 35px;
+    width: auto;
+    margin: 5px;
+}
+
+.shared_links_div{
+    float: right;
+    /* padding: 10px; */
+    margin: 25px;
+}
+
+.shared_item{
+    border-radius: 50%;
+    padding: 6.5px 0;
+    background-color: #23364B;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center; 
+    transition: 0.2s;
+    margin:0 5px;
+}
+
+.shared_item i {
+    color: #ccc;
+}
+
+.shared_item:hover {
+    cursor: pointer; 
+    background: #009FE1;
+}
+
+.shared_item:hover i{
+    color: #fff;
 }
 
 .background_image {
@@ -75,7 +119,7 @@
     display: inline-block;
     width: 80%;
     vertical-align: top;
-    margin-left: 4%;
+    margin-right: 4%;
     margin-bottom: 20px;
 }
 
