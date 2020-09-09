@@ -2,16 +2,15 @@
     padding: 3%;
 }
 
-a {
-    color: #3C3DFF;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 #kontakt_information,
 #map {
     width: 50%;
     display: inline-block;
+}
+
+#map {
+    height: 400px;
+    width: 46%;
 }
 
 #kontakt_information {
