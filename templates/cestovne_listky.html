@@ -58,7 +58,8 @@
             <img id="logo" src="../static/img/logo.png" alt="Logo">
             <li><a href="index_with_iframe.html"><i class="fa fa-home"></i> Úvod</a></li>
             <li><a class="active" href="dovolenka.html"><i class="fa fa-suitcase"></i> Dovolenka</a></li>
-            <li class="drop-down"><a href="https://italtour.letenky.sk/letenky" target="_blank"><i class="fa fa-plane"></i>Letentky</a></li>
+            <li class="drop-down"><a href="https://italtour.letenky.sk/letenky" target="_blank"><i
+                        class="fa fa-plane"></i>Letentky</a></li>
             <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-cogs"></i>Iné služby</a>
                 <!--Drop Down-->
                 <ul class="drop-down-ul animated fadeIn">
@@ -66,16 +67,19 @@
                         </i><a href="#"><i class="fa fa-angle-down"></i>Poistenie Allianz</a>
                         <!--Flyout Right-->
                         <ul class="animated fadeIn">
-                            <li><a href="https://obchod.allianzsp.sk/milan.havko" target="_blank">Online poistenie</a></li>
-                            <li><a href="../static/pdf/2017_Allianz_-_KCP_(poistne_krytie).pdf" target="_blank">KCP</a></li>
+                            <li><a href="https://obchod.allianzsp.sk/milan.havko" target="_blank">Online poistenie</a>
+                            </li>
+                            <li><a href="../static/pdf/2017_Allianz_-_KCP_(poistne_krytie).pdf" target="_blank">KCP</a>
+                            </li>
                             <li><a href="../static/pdf/2017_Allianz_-_info.pdf" target="_blank">KCP podmienky</a></li>
-                            <li><a href="../static/pdf/2017_Allianz_-_podmienky.pdf" target="_blank">CP podmienky</a></li>
+                            <li><a href="../static/pdf/2017_Allianz_-_podmienky.pdf" target="_blank">CP podmienky</a>
+                            </li>
                             <li><a href="../static/pdf/2017_Allianz_-_rady.pdf" target="_blank">Rady</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a href="cestovne_listky.html">Cestovné lístky</a></li>
-                    
+
 
                 </ul>
                 <!--//End drop down-->
@@ -85,7 +89,7 @@
                 <!--Drop Down-->
                 <ul class="drop-down-ul animated fadeIn">
                     <li><a href="o_nas.html">Popis</a></li>
-                    
+
                     <li class="flyout-right"><a href="#"><i class="fa fa-angle-down"></i>Darčekové poukážky</a>
                         <!--Flyout Right-->
                         <ul class="animated fadeIn">
@@ -93,7 +97,7 @@
                             <li><a href="dar_poukazky_bugy.html">Drogéria BUGY</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a href="partneri.html">Partneri CK</a></li>
 
                 </ul>
@@ -107,10 +111,18 @@
         <h2 class="moto">Za slnkom, vodou a pohodou</h2>
 
         <div class="shadow_border main_content align-top">
-            <p class="font-weight-bold">
-                Napíšte nám Vaše požiadavky na dovolenku a my Vám zašleme našu aktuálnu ponuku.
+            <h3 class="text-center">Cestovné lístky</h3>
+            <p>
+                Chystáte sa cestovať a ešte nemáte cestovný lístok? Naša cestovná agentúra Vám rada ponúkne svoje služby
+                a postará sa o všetko potrebné k Vašej ceste. Pomôžeme Vám vybrať druh dopravy, nájsť vhodné spojenie,
+                ktoré by najviac vyhovovalo Vaším potrebám, dohodneme za Vás všetky podrobnosti a 
+                <span class="font-weight-bold">Váš cestovný lístok získate jednoducho a rýchlo</span>.
             </p>
-            <form action="../static/js/kalendar/mail.php" method="post" enctype=”multipart/form-data”>
+            <p>
+                <span class="font-weight-bold">Odoslanie formulára nie je záväzné</span> objednanie cestovného lístka. Po korektnom vyplnení Vás budeme v čo
+                najkratšom čase kontaktovať a informovať o aktuálnej ponuke, ktorú môžete využiť.
+            </p>
+            <form action="">
                 <div class="form_personal mb-5">
                     <label for="name">Meno a priezvisko*</label>
                     <input class="form-control w-50" id="name" name="polozka_1" type="text" required>
@@ -132,42 +144,29 @@
 
                 <div>
                     <div class="polovica">
-                        <label for="krajina">Krajina*</label>
+                        <label for="krajina">Miesto odchodu*</label>
                         <input class="form-control" id="krajina" name="polozka_6" type="text" required>
                     </div>
 
                     <div class="polovica float-right">
-                        <label for="mesto">Miesto pobytu</label>
-                        <input class="form-control" id="mesto" name="polozka_7" type="text">
+                        <label for="mesto">Miesto príchodu*</label>
+                        <input class="form-control" id="mesto" name="polozka_7" type="text" required>
                     </div>
 
 
-                    <div class="stvrtina">
-                        <label class="d-block" for="od">Termín*</label>
-                        <label for="od">Od</label>
-                        <input class="form-control datepicker" id="od" name="polozka_8" type="date" required>
-                    </div>
-                    <div class="stvrtina">
-                        <label for="do">Do</label>
-                        <input class="form-control datepicker" id="do" name="polozka_9" type="date" required>
+                    <div>
+                        <label class="d-block" for="od">Dátum*</label>
+                        <select class="form-control w-25 d-inline-block mr-2" id="druh_cesty" name="polozka_8">
+                            <option value="prichodu">Príchodu</option>
+                            <option value="odchodu">Odchodu</option>
+                        </select>
+                        <input class="form-control w-auto datepicker" id="datum" name="polozka_9" type="date" required>
                     </div>
 
-
-                    <div class="polovica" style="margin-left: 1.5%;">
-                        <div class="polovica">
-                            <label class="d-block" for="min">Počet dní</label>
-                            <label for="min">Min:</label>
-                            <input class="form-control days" id="min" name="polozka_10" type="number">
-                        </div>
-                        <div class="polovica">
-                            <label for="max">Max:</label>
-                            <input class="form-control days" id="max" name="polozka_11" type="number">
-                        </div>
-                    </div>
 
                     <div class="polovica">
                         <label for="doprava">Doprava</label>
-                        <select class="form-control" id="doprava" name="polozka_12">
+                        <select class="form-control" id="doprava" name="polozka_9">
                             <option value=""></option>
                             <option value="autobusova">Autobusová</option>
                             <option value="letecka">Letecká</option>
@@ -178,50 +177,11 @@
                     </div>
 
                     <div class="polovica float-right">
-                        <label for="nastup">Nástupné miesto</label>
-                        <input class="form-control" id="nastup"  name="polozka_13" type="text">
-                    </div>
-
-                    <div class="polovica">
-                        <label for="ubytovanie">Typ ubytovania</label>
-                        <select class="form-control" id="ubytovanie" name="polozka_14">
-                            <option value=""></option>
-                            <option value="hotelove">Hotelové</option>
-                            <option value="apartmanove">Apartmánové</option>
-                            <option value="bungalov">Bungalov</option>
-                            <option value="stan">Stan</option>
-                            <option value="vlastne">Vlastné</option>
+                        <label for="nastup">Preprava auta</label>
+                        <select class="form-control" id="druh_cesty" name="polozka_10">
+                            <option value="ano">Áno</option>
+                            <option value="nie">Nie</option>
                         </select>
-                    </div>
-
-                    <div class="polovica float-right">
-                        <label for="uroven_ubytovanie">Úroveň ubytovania</label>
-                        <select class="form-control" id="uroven_ubytovanie"  name="polozka_15">
-                            <option value=""></option>
-                            <option value="*">*</option>
-                            <option value="**">**</option>
-                            <option value="***">***</option>
-                            <option value="****">****</option>
-                            <option value="*****">*****</option>
-                            <option value="ziadna">Žiadna</option>
-                        </select>
-                    </div>
-
-                    <div class="polovica">
-                        <label for="strava">Strava</label>
-                        <select class="form-control" id="strava" name="polozka_16">
-                            <option value=""></option>
-                            <option value="ranajky">Raňajky</option>
-                            <option value="polpenzia">Polpenzia</option>
-                            <option value="plnapenzia">Plnápenzia</option>
-                            <option value="all_inclusive">All inclusive</option>
-                            <option value="vlastna">Vlastná</option>
-                        </select>
-                    </div>
-
-                    <div class="polovica float-right">
-                        <label for="cena">Cena (od - do€)</label>
-                        <input class="form-control" id="cena" name="polozka_17" type="text">
                     </div>
 
                     <div class="polovica">
@@ -233,9 +193,6 @@
                         <label for="deti">Počet detí (vek)</label>
                         <input class="form-control" id="deti" name="polozka_19" type="text">
                     </div>
-
-                    <label for="obch_zast">Obchodný zástupca</label>
-                    <input class="form-control" id="obch_zast" name="polozka_20" type="text">
 
                     <label for="poznamka">Poznámka</label>
                     <textarea class="form-control" id="poznamka" name="polozka_21" cols="30" rows="5"></textarea>
@@ -249,30 +206,48 @@
         </div>
 
         <div id="reklama_div" class="shadow_border">
-<a href="https://italtour.letenky.sk/letenky" target="_blank"><img src="../static/img/1.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.trajekty.com/?utm_source=google&utm_medium=cpc&utm_campaign=Trajekty&utm_term=trajekty&gclid=CNfXj9ee9r0CFbLItAodyVQADg" target="_blank"><img src="../static/img/2.reklama.PNG" alt="reklama"></a>
-            <a href="https://online.allianzsp.sk/cestovne-poistenie/?origin=11019" target="_blank"><img src="../static/img/4.reklama.PNG" alt="reklama"></a>
-            <a href="http://cestovnelistky.studentagency.sk/?gclid=CJuLi-6wsLYCFQ-7zAodRncAcQ" target="_blank"><img src="../static/img/6.reklama.PNG" alt="reklama"></a>
+            <a href="https://italtour.letenky.sk/letenky" target="_blank"><img src="../static/img/1.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.trajekty.com/?utm_source=google&utm_medium=cpc&utm_campaign=Trajekty&utm_term=trajekty&gclid=CNfXj9ee9r0CFbLItAodyVQADg"
+                target="_blank"><img src="../static/img/2.reklama.PNG" alt="reklama"></a>
+            <a href="https://online.allianzsp.sk/cestovne-poistenie/?origin=11019" target="_blank"><img
+                    src="../static/img/4.reklama.PNG" alt="reklama"></a>
+            <a href="http://cestovnelistky.studentagency.sk/?gclid=CJuLi-6wsLYCFQ-7zAodRncAcQ" target="_blank"><img
+                    src="../static/img/6.reklama.PNG" alt="reklama"></a>
             <a href="http://interbus.sk/" target="_blank"><img src="../static/img/7.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.ticket-art.sk/" target="_blank"><img src="../static/img/8.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.livefootballtickets.com/" target="_blank"><img src="../static/img/9.reklama.PNG" alt="reklama"></a>
-            <a href="http://skanzenpodchocom.webnode.sk/" target="_blank"><img src="../static/img/10.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.kiskatravel.sk/?refid=159" target="_blank"><img src="../static/img/11.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.limba.com/sk/ubytovanie_slovensko/dolny-kubin-district.htm?pageid=3775" target="_blank"><img src="../static/img/12.reklama.PNG" alt="reklama"></a>
+            <a href="http://www.ticket-art.sk/" target="_blank"><img src="../static/img/8.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.livefootballtickets.com/" target="_blank"><img src="../static/img/9.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://skanzenpodchocom.webnode.sk/" target="_blank"><img src="../static/img/10.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.kiskatravel.sk/?refid=159" target="_blank"><img src="../static/img/11.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.limba.com/sk/ubytovanie_slovensko/dolny-kubin-district.htm?pageid=3775"
+                target="_blank"><img src="../static/img/12.reklama.PNG" alt="reklama"></a>
 
         </div>
 
         <div id="reklama_div_mobile" class="shadow_border">
-<a href="https://italtour.letenky.sk/letenky" target="_blank"><img src="../static/img/1.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.trajekty.com/?utm_source=google&utm_medium=cpc&utm_campaign=Trajekty&utm_term=trajekty&gclid=CNfXj9ee9r0CFbLItAodyVQADg" target="_blank"><img src="../static/img/2.reklama.PNG" alt="reklama"></a>
-            <a href="https://online.allianzsp.sk/cestovne-poistenie/?origin=11019" target="_blank"><img src="../static/img/4.reklama.PNG" alt="reklama"></a>
-            <a href="http://cestovnelistky.studentagency.sk/?gclid=CJuLi-6wsLYCFQ-7zAodRncAcQ" target="_blank"><img src="../static/img/6.reklama.PNG" alt="reklama"></a>
+            <a href="https://italtour.letenky.sk/letenky" target="_blank"><img src="../static/img/1.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.trajekty.com/?utm_source=google&utm_medium=cpc&utm_campaign=Trajekty&utm_term=trajekty&gclid=CNfXj9ee9r0CFbLItAodyVQADg"
+                target="_blank"><img src="../static/img/2.reklama.PNG" alt="reklama"></a>
+            <a href="https://online.allianzsp.sk/cestovne-poistenie/?origin=11019" target="_blank"><img
+                    src="../static/img/4.reklama.PNG" alt="reklama"></a>
+            <a href="http://cestovnelistky.studentagency.sk/?gclid=CJuLi-6wsLYCFQ-7zAodRncAcQ" target="_blank"><img
+                    src="../static/img/6.reklama.PNG" alt="reklama"></a>
             <a href="http://interbus.sk/" target="_blank"><img src="../static/img/7.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.ticket-art.sk/" target="_blank"><img src="../static/img/8.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.livefootballtickets.com/" target="_blank"><img src="../static/img/9.reklama.PNG" alt="reklama"></a>
-            <a href="http://skanzenpodchocom.webnode.sk/" target="_blank"><img src="../static/img/10.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.kiskatravel.sk/?refid=159" target="_blank"><img src="../static/img/11.reklama.PNG" alt="reklama"></a>
-            <a href="http://www.limba.com/sk/ubytovanie_slovensko/dolny-kubin-district.htm?pageid=3775" target="_blank"><img src="../static/img/12.reklama.PNG" alt="reklama"></a>
+            <a href="http://www.ticket-art.sk/" target="_blank"><img src="../static/img/8.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.livefootballtickets.com/" target="_blank"><img src="../static/img/9.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://skanzenpodchocom.webnode.sk/" target="_blank"><img src="../static/img/10.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.kiskatravel.sk/?refid=159" target="_blank"><img src="../static/img/11.reklama.PNG"
+                    alt="reklama"></a>
+            <a href="http://www.limba.com/sk/ubytovanie_slovensko/dolny-kubin-district.htm?pageid=3775"
+                target="_blank"><img src="../static/img/12.reklama.PNG" alt="reklama"></a>
 
         </div>
     </div>

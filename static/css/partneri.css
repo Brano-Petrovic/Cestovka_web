@@ -1,0 +1,7 @@
+.partneri img{
+    height: 80px;
+    width: auto;
+    margin: 10px;
+    box-shadow: 2px 3px 8px #000000;
+    border-radius: 5px;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Italtour</title>
+<meta name="keywords" content="Taliansko, Chorvatsko, Bulharsko, Egypt, Grecko, Turecko, Cyprus,Spanielsko, Slovensko" />
+<meta name="description" content="Cestovna agentura" />
+<meta name="author" content="Michal Petrovic" />
+<meta name="ROBOTS" content="ALL" />
+<meta http-equiv="content-type" content="text/html; charset=windows-1250" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="kalendar/datepicker-sk.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+
+  $(function() { 
+    $("#od").datepicker("setDate", new Date());   
+    $( "#od" ).datepicker({
+      defaultDate: "+0w",
+      changeMonth: true,
+      numberOfMonths: 2,
+      regional: "sk",
+      dateFormat: "dd.mm.yy",
+      showOn: "button",
+      buttonImage: "kalendar/kalendar_tlacitko.gif",
+      buttonImageOnly: true,
+      buttonText: "Vyberte dátum",
+      beforeShow: function(){    
+           $(".ui-datepicker").css('font-size', 10)},
+      onClose: function( selectedDate ) {
+        $( "#do" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $("#do").datepicker("setDate", new Date());   
+    $( "#do" ).datepicker({
+      defaultDate: "+0w",
+      changeMonth: true,
+      numberOfMonths: 2,
+      regional: "sk",
+      dateFormat: "dd.mm.yy",
+      showOn: "button",
+      buttonImage: "kalendar/kalendar_tlacitko.gif",
+      buttonImageOnly: true,
+      buttonText: "Vyberte dátum",
+      beforeShow: function(){    
+           $(".ui-datepicker").css('font-size', 10)},
+      onClose: function( selectedDate ) {
+        $( "#od" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
+  </script>
+</head>
+
+<body bgcolor="#D9E1F4">
+
+<form action="kalendar/mail.php" method="post">
+  <center><br />
+  <font style="color: black; font-family: Arial; font-size: 14px;">Napíšte nám Vaše požiadavky na dovolenku a my Vám zašleme našu aktuálnu ponuku.</font><br />
+  <font style="color: black; font-family: Arial; font-size: 14px; font-weight: bold;">(*) - povinné údaje, pre správne spracovanie Vašej žiadosti je NUTNÉ vyplniť všetky povinné údaje!</font><br /><br />
+
+  <table border="0px" width="550px"  cellpadding="2px" cellspacing="2px" bgcolor="#95a5e7">
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Meno a priezvisko:</font>
+    </td>
+    <td align="center"><input type="text" size="60" name="polozka_01" style="width: 400px;" /></td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Adresa:</font>
+    </td>
+    <td align="center"><input type="text" size="60" name="polozka_02" style="width: 400px;" /></td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Telefón:*</font>
+    </td>
+    <td align="center"><input type="text" size="60" name="polozka_03" style="width: 400px;" /></td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Fax:</font>
+    </td>
+    <td align="center"><input type="text" size="60" name="polozka_04" style="width: 400px;" /></td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">e-mail:*</font>
+    </td>
+    <td align="center"><input type="text" size="60" name="polozka_05" style="width: 400px;" /></td>
+   </tr>
+  </table>
+<br />  
+  <table border="0px" width="550px"  cellpadding="2px" cellspacing="2px" bgcolor="#95a5e7">
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Krajina:*</font>
+    </td>
+    <td align="center" colspan="2"><input type="text" size="60" name="polozka_06" style="width: 400px;" /></td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Miesto pobytu:</font>
+    </td>
+    <td align="center" colspan="2"><input type="text" size="60" name="polozka_07" style="width: 400px;" /></td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Termín:*</font>
+    </td>
+    <td align="left" colspan="2" style="padding-left: 1px; padding-right: 1px;">
+   <font style="color: black; font-family: Arial; font-size: 13px; letter-spacing: 0px;">Od:</font>
+	<input type="text" id="od" name="od" style="width: 135px; margin-left: 8px;" />
+
+
+   <font style="color: black; font-family: Arial; font-size: 13px;">&nbsp;&nbsp;&nbsp;&nbsp;Do: </font>
+	<input type="text" id="do" name="do" style="width: 135px; margin-left: 8px;" />
+   
+    </td>
+   </tr>
+   <tr>
+    <td width="130px" bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Počet dní:</font>
+    </td>
+    <td align="left"><font style="color: black; font-family: Arial; font-size: 13px;">Min.: </font><input type="text"  name="polozka_17" style="width: 155px;" /></td>
+    <td align="right"><font style="color: black; font-family: Arial; font-size: 13px;">Max.: </font><input type="text"  name="polozka_18" style="width: 155px;" /></td>
+   </tr>
+
+  </table>
+
+  <table border="0px" width="550px" cellpadding="2px" cellspacing="2px" bgcolor="#95a5e7" style="margin-top: -2px;">
+   <tr>
+    <td bgcolor="#BFCCF0" style="padding-left: 10px; width: 132px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Doprava:*</font>
+    </td>
+    <td align="left" style="width: 130px;">
+     <select name="polozka_10" size="1" style="width: 100%;">
+      <option value="Autobusová"> Autobusová </option>
+      <option value="Kombinovana"> Kombinovaná </option>
+      <option value="letecka"> Letecká </option>
+      <option value="Vlakova"> Vlaková </option>
+      <option value="Vlastna"> Vlastná </option>
+     </select>
+    </td>
+    <td bgcolor="#BFCCF0" style="padding-left: 10px; width: 135px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Nástupné miesto:</font>
+    </td>
+    <td align="right" style="width: 130px;">
+    <input type="text"  name="polozka_09" style="width: 125px;" />
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#BFCCF0" style="padding-left: 10px; " align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Typ ubytovania:*</font>
+    </td>
+    <td align="left" >
+     <select name="polozka_11" size="1" style="width: 100%;">
+      <option value="Hotelove"> Hotelové </option>
+      <option value="Apartmanove"> Apartmánové </option>
+      <option value="Bungalov"> Bungalov </option>
+      <option value="Stan"> Stan </option>
+      <option value="vlastne"> Vlastné </option>
+     </select>
+    </td>
+    <td bgcolor="#BFCCF0" style="padding-left: 10px; width: 135px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Úroveň ubytovania:</font>
+    </td>
+    <td align="right" >
+     <select name="polozka_16" size="1" style="width: 100%;">
+      <option value="*"> *</option>
+      <option value="**"> ** </option>
+      <option value="***"> *** </option>
+      <option value="****"> **** </option>
+      <option value="*****"> ***** </option>
+      <option value="Ziadna"> Žiadna </option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Stravovanie:*</font>
+    </td>
+    <td align="left" >
+     <select name="polozka_12" size="1" style="width: 100%;">
+      <option value="Ranajky">Raňajky</option>
+      <option value="Polpenzia">Polpenzia</option>
+      <option value="Plna penzia">Plná penzia</option>
+      <option value="All inclusive">All inclusive</option>
+      <option value="Vlastna">Vlastná</option>
+     </select>
+    </td> 
+    <td bgcolor="#BFCCF0" style="padding-left: 10px; width: 135px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Cena ( od-do € ):</font>
+    </td>
+    <td align="right" style="width: 125px;">
+    <input type="text"  name="polozka_19" style="width: 125px;" />
+    </td> 
+   </tr>
+   <tr>
+    <td  bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Počet dosp. os.:*</font>
+    </td>
+     <td align="center" style="padding-left: 2px;"><input type="text" name="polozka_13" style="width: 125px;" />
+    </td>
+    <td  bgcolor="#BFCCF0" style="padding-left: 10px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Počet detí (vek):*</font>
+    </td>
+     <td align="center" style="padding-left: 2px;"><input type="text" name="polozka_14" style="width: 125px;" />
+    </td>
+   </tr>
+   <tr>
+    <td  bgcolor="#BFCCF0" style="padding-left: 10px; width: 130px;" align="left">
+     <font style="color: black; font-family: Arial; font-size: 13px;">Obchodný zástupca:</font> 
+    </td>
+    <td align="left" colspan="4"  padding="2px">
+     <input type="text" size="60" name="polozka_zastupca" style="width: 98%;" />
+    </td>
+   </tr>
+  </table>
+
+<br />
+  <table border="0px" width="550px"  cellpadding="2px" cellspacing="2px" bgcolor="#95a5e7"> 
+   <tr>
+    <td bgcolor="#BFCCF0" align="center">
+     <textarea name="polozka_15" rows="5" cols="60">Poznámka...(iné požiadavky)</textarea>
+    </td>
+   </tr>
+   <tr>
+    <td bgcolor="#BFCCF0" align="center"> 
+     <input type="submit" value="   Poslať   " />
+    </td>
+   </tr>
+  </table>
+<br /><font style="color: black; font-family: Arial; font-size: 14px; font-weight: bold;">(*) - povinné údaje, pre správne spracovanie Vašej žiadosti je NUTNÉ vyplniť všetky povinné údaje!</font>
+</center>
+</form>
+</body>
+</html>                                                             
