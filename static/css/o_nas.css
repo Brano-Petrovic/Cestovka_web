@@ -13,3 +13,8 @@
 .main_content img {
     box-shadow: 2px 3px 8px #000000;
 }
+
+.moto {
+    font-size: 30px;
+    text-shadow: 2px 3px 3px black
+}

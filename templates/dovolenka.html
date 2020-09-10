@@ -18,7 +18,14 @@
 
     <link rel="stylesheet" href="../static/css/menu.css">
     <link rel="stylesheet" href="../static/css/general.css">
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/dovolenka.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="../static/js/menu.js"></script>
 </head>
 
 <body>
@@ -90,24 +97,85 @@
             <li><a href="links.html"><i class="fa fa-external-link"></i>Link</a></li>
             <a href="#" class="toggle-menu visible-xs-block">&#9776;</a>
         </ul>
+        <h2 class="moto">Za slnkom, vodou a pohodou</h2>
 
-        <div class="shared_links_div">
-            <div class="shared_item">
-                <a href="https://www.facebook.com/CKITALTOUR" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a>
-            </div>
-            <div class="shared_item">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http://italtour.sk/" target="_blank"><i class="fa fa-thumbs-up fa-lg"></i></a>
-            </div>
-            <div class="shared_item">
-                <a href="mailto:info@italtour.sk"><i class="fa fa-envelope fa-lg"></i></a>
-            </div>
-        </div>
+        <div class="shadow_border main_content align-top">
+            <p class="font-weight-bold">
+                Napíšte nám Vaše požiadavky na dovolenku a my Vám zašleme našu aktuálnu ponuku.
+            </p>
+            <form action="">
+                <div class="form_personal mb-5">
+                    <label for="name">Meno a priezvisko*</label>
+                    <input class="form-control" id="name" type="text" required>
 
-        <h2 class="moto" class="d-inline-block">Za slnkom, vodou a pohodou</h2>
+                    <label for="adresa">Adresa</label>
+                    <input class="form-control" id="adresa" type="text">
 
-        <div class="main_content shadow_border">
-            <iframe name="okno" src=" http://zajazdy.italtour.sk/ " id="ifrProfiTour" frameborder="0" style="height:1935px; width: 100%" scrolling="no"></iframe>
-            <script type="text/javascript" src=" http://www.profitour.sk/Data/js/cms-frame.js"></script>
+                    <div class="polovica">
+                        <label for="telefon">Telefon*</label>
+                        <input class="form-control" id="telefon" type="number" required>
+                    </div>
+
+                    <div class="polovica float-right">
+                        <label for="email">Email*</label>
+                        <input class="form-control" id="email" type="email" required>
+                    </div>
+                </div>
+                <hr>
+
+                <div>
+                    <div class="polovica">
+                        <label for="krajina">Krajina*</label>
+                        <input class="form-control" id="krajina" type="text" required>
+                    </div>
+
+                    <div class="polovica float-right">
+                        <label for="mesto">Miesto pobytu</label>
+                        <input class="form-control" id="mesto" type="text">
+                    </div>
+
+                    <label class="d-block" for="od">Termín*</label>
+                    <div class="d-inline-block">
+                        <label for="od">Od</label>
+                        <input class="form-control d-inline-block" id="od" type="date" required>
+                    </div>
+                    <div class="d-inline-block">
+                        <label for="do">Do</label>
+                        <input class="form-control d-inline-block" id="do" type="date" required>
+                    </div>
+
+
+                    <!-- <label for="email">Počet dní*</label>
+                    <input class="form-control" id="email" type="date" required>
+
+                    <label for="name">Typ ubytovania</label>
+                    <input class="form-control" id="name" type="text" required>
+
+                    <label for="adresa">Stravovanie</label>
+                    <input class="form-control" id="adresa" type="text">
+
+                    <label for="telefon">Počet dospelých osôb</label>
+                    <input class="form-control" id="telefon" type="number" required>
+
+                    <label for="email">Obchodný zástupca</label>
+                    <input class="form-control" id="email" type="email" required>
+
+                    <label for="name">Nástupné miesto</label>
+                    <input class="form-control" id="name" type="text" required>
+
+                    <label for="adresa">Úroveň ubytovania</label>
+                    <input class="form-control" id="adresa" type="text">
+
+                    <label for="telefon">Cena (od - do €)</label>
+                    <input class="form-control" id="telefon" type="number" required>
+
+                    <label for="email">počet detí (vek)</label>
+                    <input class="form-control" id="email" type="email" required> -->
+                </div>
+            </form>
+            <p>
+                * - povinné údaje, pre správne spracovanie Vašej žiadosti je NUTNÉ vyplniť všetky povinné údaje!
+            </p>
         </div>
 
         <div id="reklama_div" class="shadow_border">
@@ -154,12 +222,7 @@
         </div>
     </div>
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <script src="../static/js/menu.js"></script>
 </body>
 
 </html>
