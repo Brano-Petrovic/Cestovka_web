@@ -157,9 +157,6 @@
     #reklama_div {
         display: inline-block;
     }
-    #reklama_div_mobile {
-        display: none;
-    }
 }
 
 @media (max-width:767px) {
@@ -171,12 +168,10 @@
         margin-left: 0;
     }
     #reklama_div {
-        display: none;
-    }
-    #reklama_div_mobile {
         display: block;
+        width: 100%;
     }
-    #reklama_div_mobile img {
+    #reklama_div img {
         padding: 10px;
         width: 32%;
         display: inline-block;
