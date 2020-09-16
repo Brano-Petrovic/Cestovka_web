@@ -57,10 +57,10 @@
         <ul class="exo-menu">
             <img id="logo" src="../static/img/logo.png" alt="Logo">
             <li><a href="index_with_iframe.html"><i class="fa fa-home"></i> Úvod</a></li>
-            <li><a class="active" href="dovolenka.html"><i class="fa fa-suitcase"></i> Dovolenka</a></li>
+            <li><a href="dovolenka.html"><i class="fa fa-suitcase"></i> Dovolenka</a></li>
             <li class="drop-down"><a href="https://italtour.letenky.sk/letenky" target="_blank"><i
                         class="fa fa-plane"></i>Letentky</a></li>
-            <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-cogs"></i>Iné služby</a>
+            <li class="drop-down"><a class="active" href="#"><i class="fa fa-angle-down"></i><i class="fa fa-cogs"></i>Iné služby</a>
                 <!--Drop Down-->
                 <ul class="drop-down-ul animated fadeIn">
                     <li class="flyout-right">
@@ -103,7 +103,7 @@
                 </ul>
                 <!--//End drop down-->
             </li>
-            <li><a href="#"><i class="fa fa-camera"></i>Fotogaléria</a></li>
+            <li><a href="fotogaleria.html"><i class="fa fa-camera"></i>Fotogaléria</a></li>
             <li><a href="kontakt.html"><i class="fa fa-compress"></i>Kontakt</a></li>
             <li><a href="links.html"><i class="fa fa-external-link"></i>Link</a></li>
             <a href="#" class="toggle-menu visible-xs-block">&#9776;</a>
@@ -137,7 +137,7 @@
                 <span class="font-weight-bold">Odoslanie formulára nie je záväzné</span> objednanie cestovného lístka. Po korektnom vyplnení Vás budeme v čo
                 najkratšom čase kontaktovať a informovať o aktuálnej ponuke, ktorú môžete využiť.
             </p>
-            <form action="">
+            <form action="../static/js/cestovne_listky.php">
                 <div class="form_personal mb-5">
                     <label for="name">Meno a priezvisko*</label>
                     <input class="form-control w-50" id="name" name="polozka_1" type="text" required>
@@ -180,8 +180,8 @@
 
 
                     <div class="polovica">
-                        <label for="doprava">Doprava</label>
-                        <select class="form-control" id="doprava" name="polozka_9">
+                        <label for="doprava">Doprava*</label>
+                        <select class="form-control" id="doprava" name="polozka_10" required>
                             <option value=""></option>
                             <option value="autobusova">Autobusová</option>
                             <option value="letecka">Letecká</option>
@@ -192,8 +192,8 @@
                     </div>
 
                     <div class="polovica float-right">
-                        <label for="nastup">Preprava auta</label>
-                        <select class="form-control" id="druh_cesty" name="polozka_10">
+                        <label for="nastup">Preprava auta*</label>
+                        <select class="form-control" id="druh_cesty" name="polozka_11" required>
                             <option value="ano">Áno</option>
                             <option value="nie">Nie</option>
                         </select>
@@ -201,16 +201,16 @@
 
                     <div class="polovica">
                         <label for="osoby">Počet dospelých osôb*</label>
-                        <input class="form-control" id="osoby" name="polozka_18" type="text" required>
+                        <input class="form-control" id="osoby" name="polozka_12" type="text" required>
                     </div>
 
                     <div class="polovica float-right">
                         <label for="deti">Počet detí (vek)</label>
-                        <input class="form-control" id="deti" name="polozka_19" type="text">
+                        <input class="form-control" id="deti" name="polozka_13" type="text">
                     </div>
 
                     <label for="poznamka">Poznámka</label>
-                    <textarea class="form-control" id="poznamka" name="polozka_21" cols="30" rows="5"></textarea>
+                    <textarea class="form-control" id="poznamka" name="polozka_24" cols="30" rows="5"></textarea>
 
                     <input id="submit_button" class="btn btn-primary" type="submit" value="Odoslať">
                 </div>
