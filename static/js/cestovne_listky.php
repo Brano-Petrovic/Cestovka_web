@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link rel="icon" type="image/png" href="../img/logo_ital_tour.png"/>
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -28,73 +28,64 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="partnerske_ck">
-            <img src="../img/tip_travel.png" alt="tip_travel">
-            <img src="../img/hydrotour_logo.gif" alt="hydrotour">
-            <img src="../img/satur.png" alt="satur">
-            <img src="../img/solvex.png" alt="solvex">
-            <img src="../img/turancar.jpg" alt="turancar">
-            <img src="../img/fifo.png" alt="fifo">
-            <img src="../img/kartago.jpg" alt="kartago">
-            <img src="../img/happy_travel.png" alt="happy_travel">
-            <img src="../img/azad.png" alt="azad">
-            <img src="../img/globtour.jpg" alt="globtour">
-            <img src="../img/daka.png" alt="daka">
-            <img src="../img/paxtravel.png" alt="paxtravel">
+<div class="logo_div">
+        <a href="../../index.html"><img id="logo" src="../img/logo_ital_tour.png" alt="Logo"></a> 
+    </div>
+    <ul class="exo-menu">
+        <div class="logo_div_mobile">
+           <a href="../../index.html"><img id="logo_mobile" src="../img/logo_ital_tour.png" alt="Logo"></a>   
         </div>
+        <li><a href="../../index.html"><i class="fa fa-home"></i> Úvod</a></li>
+        <li><a class="active" href="../../templates/dovolenka.html"><i class="fa fa-suitcase"></i> Dovolenka</a></li>
+        <li class="drop-down"><a href="https://italtour.letenky.sk/letenky" target="_blank"><i class="fa fa-plane"></i>Letenky</a></li>
+        <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-cogs"></i>Iné služby</a>
+            <!--Drop Down-->
+            <ul class="drop-down-ul animated fadeIn">
+                <li class="flyout-left">
+                    </i><a href="#"><i class="fa fa-angle-down"></i>Poistenie Allianz</a>
+                    <!--Flyout Right-->
+                    <ul class="animated fadeIn">
+                        <li><a href="https://obchod.allianzsp.sk/milan.havko" target="_blank">Online poistenie</a></li>
+                        <li><a href="static/pdf/2017_Allianz_-_KCP_(poistne_krytie).pdf" target="_blank">KCP</a></li>
+                        <li><a href="static/pdf/2017_Allianz_-_info.pdf" target="_blank">KCP podmienky</a></li>
+                        <li><a href="static/pdf/2017_Allianz_-_podmienky.pdf" target="_blank">CP podmienky</a></li>
+                        <li><a href="static/pdf/2017_Allianz_-_rady.pdf" target="_blank">Rady</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="../../templates/cestovne_listky.html">Cestovné lístky</a></li>
+                
+
+            </ul>
+            <!--//End drop down-->
+        </li>
+        <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-info-circle"></i> O nás</a>
+            <!--Drop Down-->
+            <ul class="drop-down-ul animated fadeIn">
+                <li><a href="../../templates/o_nas.html">Popis</a></li>
+                
+                <li class="flyout-left"><a href="#"><i class="fa fa-angle-down"></i>Darčekové poukážky</a>
+                    <!--Flyout Right-->
+                    <ul class="animated fadeIn">
+                        <li><a href="../../templates/dar_poukazky_ck.html">CK italtour</a></li>
+                        <li><a href="../../templates/dar_poukazky_bugy.html">Drogéria BUGY</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="../../templates/partneri.html">Partneri CK</a></li>
+
+            </ul>
+            <!--//End drop down-->
+        </li>
+        <li><a href="../../templates/fotogaleria.html"><i class="fa fa-camera"></i>Fotogaléria</a></li>
+        <li><a href="../../templates/kontakt.html"><i class="fa fa-compress"></i>Kontakt</a></li>
+        <li><a href="../../templates/links.html"><i class="fa fa-external-link"></i>Link</a></li>
+        <a href="#" class="toggle-menu visible-xs-block">Menu &#9776;</a>
+    </ul>
+    <div class="content">
         <div class="background_image">
             <img src="../img/plaz_background.jpg" alt="background">
         </div>
-        <ul class="exo-menu">
-            <img id="logo" src="../img/logo.png" alt="Logo">
-            <li><a href="../../templates/index_with_iframe.html"><i class="fa fa-home"></i> Úvod</a></li>
-            <li><a href="../../templates/dovolenka.html"><i class="fa fa-suitcase"></i> Dovolenka</a></li>
-            <li class="drop-down"><a href="https://italtour.letenky.sk/letenky" target="_blank"><i class="fa fa-plane"></i>Letentky</a></li>
-            <li class="drop-down"><a class="active" href="#"><i class="fa fa-angle-down"></i><i class="fa fa-cogs"></i>Iné služby</a>
-                <!--Drop Down-->
-                <ul class="drop-down-ul animated fadeIn">
-                    <li class="flyout-right">
-                        </i><a href="#"><i class="fa fa-angle-down"></i>Poistenie Allianz</a>
-                        <!--Flyout Right-->
-                        <ul class="animated fadeIn">
-                            <li><a href="https://obchod.allianzsp.sk/milan.havko" target="_blank">Online poistenie</a></li>
-                            <li><a href="../pdf/2017_Allianz_-_KCP_(poistne_krytie).pdf" target="_blank">KCP</a></li>
-                            <li><a href="../pdf/2017_Allianz_-_info.pdf" target="_blank">KCP podmienky</a></li>
-                            <li><a href="../pdf/2017_Allianz_-_podmienky.pdf" target="_blank">CP podmienky</a></li>
-                            <li><a href="../pdf/2017_Allianz_-_rady.pdf" target="_blank">Rady</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="../../templates/cestovne_listky.html">Cestovné lístky</a></li>
-                    
-
-                </ul>
-                <!--//End drop down-->
-            </li>
-            <li class="drop-down"><a href="#"><i class="fa fa-angle-down"></i><i class="fa fa-info-circle"></i> O nás</a>
-                <!--Drop Down-->
-                <ul class="drop-down-ul animated fadeIn">
-                    <li><a href="../../templates/o_nas.html">Popis</a></li>
-                    
-                    <li class="flyout-right"><a href="#"><i class="fa fa-angle-down"></i>Darčekové poukážky</a>
-                        <!--Flyout Right-->
-                        <ul class="animated fadeIn">
-                            <li><a href="../../templates/dar_poukazky_ck.html">CK italtour</a></li>
-                            <li><a href="../../templates/dar_poukazky_bugy.html">Drogéria BUGY</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="../../templates/partneri.html">Partneri CK</a></li>
-
-                </ul>
-                <!--//End drop down-->
-            </li>
-            <li><a href="fotogaleria.html"><i class="fa fa-camera"></i>Fotogaléria</a></li>
-            <li><a href="../../templates/kontakt.html"><i class="fa fa-compress"></i>Kontakt</a></li>
-            <li><a href="../../templates/links.html"><i class="fa fa-external-link"></i>Link</a></li>
-            <a href="#" class="toggle-menu visible-xs-block">&#9776;</a>
-        </ul>
 
         <div class="shared_links_div">
             <div class="shared_item">
@@ -110,7 +101,23 @@
                 <a href="mailto:info@italtour.sk" title="Email"><i class="fa fa-envelope fa-lg"></i></a>
             </div>
         </div>
-        <h2 class="moto">Za slnkom, vodou a pohodou</h2>
+
+        <h2 class="moto" class="d-inline-block">Za slnkom, vodou a pohodou</h2>
+        
+        <div class="partnerske_ck shadow_border">  
+            <img src="../img/tip_travel.png" alt="tip_travel">           
+            <img src="../img/hydrotour_logo.gif" alt="hydrotour">
+            <img src="../img/satur.png" alt="satur">
+            <img src="../img/solvex.png" alt="solvex">
+            <img src="../img/turancar.jpg" alt="turancar">
+            <img src="../img/fifo.png" alt="fifo">
+            <img src="../img/kartago.jpg" alt="kartago">
+            <img src="../img/happy_travel.png" alt="happy_travel">
+            <img src="../img/azad.png" alt="azad">
+            <img src="../img/globtour.jpg" alt="globtour">
+            <img src="../img/daka.png" alt="daka">
+            <img src="../img/paxtravel.png" alt="paxtravel">
+        </div>
 
         <div class="shadow_border main_content align-top">
         <?php

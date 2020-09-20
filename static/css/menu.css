@@ -2,8 +2,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 8px 0 0 8px;
 }
 
 .exo-menu a,
@@ -21,12 +20,15 @@ ul {
 }
 
 .exo-menu {
-    width: 100%;
-    /* float: left; */
+    margin-top: 50px;
+    width: 79%;
+    left: 7%;
     list-style: none;
     position: relative;
     background: #23364B;
     z-index: 10;
+    display: inline-block;
+    padding-left: 10px;
 }
 
 .exo-menu>li {
@@ -339,7 +341,7 @@ li.flyout-mega>a:hover+.flyout-mega-wrap {
     .exo-menu {
         min-height: 58px;
         background-color: #23364B;
-        width: 100%;
+        width: 86%;
         height: 60px;
     }
     .exo-menu>li>a {
