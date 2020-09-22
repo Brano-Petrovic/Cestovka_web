@@ -167,7 +167,7 @@ Poznamka: $polozka_14"),
         <div class="footer_content">
             <div class="w-50 d-inline-block p-3">
                 <p class="font-weight-bold">Adresa:</p>
-                Radlického 1721/58 <br> 02601 <br> Dolný Kubín
+                Radlinského 1721/58 <br> 02601 <br> Dolný Kubín
             </div>
             <div class="align-top d-inline-block p-3">
                 <p class="font-weight-bold">Kontakt:</p>

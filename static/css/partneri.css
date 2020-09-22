@@ -5,3 +5,10 @@
     box-shadow: 2px 3px 8px #000000;
     border-radius: 5px;
 }
+
+@media (max-width:500px) {
+    .main_content img{
+        width: 40%;
+        height: auto;
+    }   
+}

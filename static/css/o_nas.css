@@ -13,3 +13,9 @@
 .moto {
     text-shadow: 2px 3px 3px black
 }
+
+@media (max-width:500px) {
+    .main_content img{
+        width: 90%;
+    }   
+}

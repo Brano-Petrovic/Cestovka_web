@@ -187,6 +187,49 @@ body{
     transform: unset;
 }
 
+@media (max-width:1605px) {
+    .content {
+        width: 80%;
+    }    
+}
+
+@media (max-width:1400px) {
+    .content {
+        width: 85%;
+    }
+    .logo_div{
+        top: -35px;
+    }
+}
+
+@media (max-width:1045px) {
+    .main_content {
+        width: 100%;
+        margin: 20px 0;
+    }  
+    
+    #reklama_div {
+        display: block;
+        width: 100%;
+    }
+
+    .partnerske_ck {
+        display: block;
+        width: 100%;
+    }
+
+    #reklama_div img {
+        padding: 10px;
+        width: 20%;
+        display: inline-block;
+    }
+
+    .partnerske_ck img{
+        width: 75px;
+        height: auto;
+    }
+}
+
 @media (min-width:767px) {
     #reklama_div {
         display: inline-block;
@@ -224,20 +267,5 @@ body{
     }
     .logo_div{
         display: none;
-    }
-}
-
-@media (max-width:1605px) {
-    .content {
-        width: 80%;
-    }    
-}
-
-@media (max-width:1400px) {
-    .content {
-        width: 85%;
-    }
-    .logo_div{
-        top: -35px;
     }
 }
